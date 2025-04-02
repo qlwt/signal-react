@@ -8,7 +8,7 @@ Utility react hooks for @qyu/signal-core
 
 Creates OSignal, updates it's value after render
 
-```typescriptreact
+```tsx
 const App = () => {
     const param = 10
     const root = useSignalValue(
@@ -23,7 +23,7 @@ const App = () => {
 
 Extracts Signal output value to state, rerender when it updates
 
-```typescriptreact
+```tsx
 const App = () => {
     const root_output = useSignalOutput(root)
 }
@@ -33,7 +33,7 @@ const App = () => {
 
 Will fire event on deps change
 
-```typescriptreact
+```tsx
 const App = () => {
     const esignal_deps = useSignalEventDeps([1, ""])
 }
@@ -43,7 +43,7 @@ const App = () => {
 
 Will attach listener to target
 
-```typescriptreact
+```tsx
 const App = () => {
     const root = useSignalValue(0)
 
@@ -61,7 +61,7 @@ const App = () => {
 
 ### useDOMStyle
 
-```typescriptreact
+```tsx
 const App = (props) => {
     const root = useSignalValue(0)
     const ref = useRef<HTMLElement | null>()
@@ -82,7 +82,7 @@ const App = (props) => {
 
 ### useDOMAttribute
 
-```typescriptreact
+```tsx
 const App = (props) => {
     const root = useSignalValue(0)
     const ref = useRef<HTMLElement | null>()
