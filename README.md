@@ -29,6 +29,25 @@ const App = () => {
 }
 ```
 
+### useSignalConnect
+
+Same as useSignalOutput, but does not initialise value immediately and instead waits for effect.
+Prevents unnecesary updates for memorized signals
+
+```tsx
+const App = () => {
+    const root_connection = useSignalConnect(root)
+
+    if (root_connection.active) {
+        // prints root output
+        console.log("active", root_connection.value)
+    } else {
+        // prints null
+        console.log("active", root_connection.value)
+    }
+}
+```
+
 ### useSignalEventDeps
 
 Will fire event on deps change
