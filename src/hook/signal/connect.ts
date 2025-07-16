@@ -35,10 +35,7 @@ export const useSignalConnect = function <T>(
                         }
                     }
 
-                    return {
-                        active: false,
-                        value: null
-                    }
+                    return old_state
                 })
             },
             [state_set, comparator]

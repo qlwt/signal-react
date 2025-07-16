@@ -1,7 +1,7 @@
 {
     "name": "@qyu/signal-react",
     "type": "module",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "main": "./build/bundle/entry/index.js",
     "description": "React hooks for @qyu/signal-core",
     "homepage": "https://github.com/qlwt/signal-react#readme",
