@@ -5,7 +5,7 @@ import * as react from "react";
 export const useSignalEventDeps = function(deps: unknown[]): ESignal {
     const [esignal, emit] = react.useMemo(() => sc.esignal_new_manual(), [])
 
-    react.useEffect(
+    react.useLayoutEffect(
         () => {
             emit()
         },
